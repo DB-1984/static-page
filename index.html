@@ -15,6 +15,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./src/scripts.js" defer></script>
+  <link rel="stylesheet" href="./src/index.css">
+  </script>
   <style>
     body {
       font-family: "Inter", sans-serif;
@@ -39,21 +41,21 @@
       </div>
     </div>
   </header>
-  <section class="p-4 py-10">
+  <section class="p-4 py-10 app-bg">
     <div class="w-full max-w-7xl mx-auto">
       <div class="flex flex-col lg:flex-row gap-4">
         <div
-          class="flex w-full rounded-xl min-h-[400px] md:min-h-[600px] lg:min-h-[800px] bg-contain bg-no-repeat bg-center border"
-          style="background-image:url('./assets/DB.jpg')" data-aos="fade-up">
+          class="flex w-full rounded-xl min-h-[400px] md:min-h-[600px] lg:min-h-[800px] bg-contain bg-no-repeat bg-center"
+          style="background-image:url('./assets/DB.png')" data-aos="fade-in" data-aos-duration="2000">
           <div class="mt-auto flex flex-col md:flex-row gap-4 w-full">
             <a href=""
-              class="bg-white hover:bg-black hover:text-white p-2 text-xl rounded-full w-full flex gap-4 justify-between items-center">
+              class="bg-white/80 hover:bg-black hover:text-white m-4 p-2 text-xl rounded-full w-full flex gap-4 justify-between items-center">
               <span class="pl-2">Learn more</span>
               <i
                 class="flex items-center justify-center bi bi-arrow-down bg-black text-white rounded-full p-1 w-[40px] h-[40px] text-center"></i>
             </a>
             <a href=""
-              class="bg-white hover:bg-black hover:text-white p-2 text-xl rounded-full w-full flex gap-4 justify-between items-center">
+              class="bg-white/80 hover:bg-black hover:text-white m-4 p-2 text-xl rounded-full w-full flex gap-4 justify-between items-center">
               <span class="pl-2">Contact</span>
               <i
                 class="flex items-center justify-center bi bi-envelope bg-black text-white rounded-full p-1 w-[40px] h-[40px] text-center"></i>
@@ -61,161 +63,163 @@
           </div>
         </div>
         <div class="w-full flex flex-col gap-14" data-aos="fade-up">
-          <div class="w-full rounded-xl p-14 bg-gradient-to-tr from-gray-200 to-gray-100  shadow-xl">
+          <div class="w-full h-full rounded-xl p-14 bg-gradient-to-tr from-zinc-100 to-gray-300  shadow-xl">
             <h1 class="text-3xl font-bold lg:text-5xl mb-auto pb-10">
               Web-developer, designer & full-stack engineer
             </h1>
-            <p class="text-lg lg:text-xl">
+            <p class="text-lg/8 pb-4 lg:text-xl/8">
               I make NextJS and React full-stack apps, personal & e-commerce HTML/PHP websites, and offer creative
               design solutions.
             </p>
+            <div class="grid grid-cols-2 mt-4 pt-4 sm:grid-cols-4 gap-3 max-w-7xl mx-auto p-1" data-aos="fade-in"
+              data-aos-duration="1000">
 
-          </div>
-
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-7xl mx-auto p-4" data-aos="fade-in"
-            data-aos-duration="1000">
-
-            <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                <path fill="#000"
-                  d="M31.015 61.316v-21.88h1.187v3.442q.21-.23.387-.486a5.88 5.88 0 0 1 5.364-3.328c2.706-.08 4.905.92 6.197 3.328a10.7 10.7 0 0 1 .258 9.808c-1.204 2.699-4.177 4.04-7.36 3.547a5.95 5.95 0 0 1-4.751-3.134v8.7zm1.187-14.14.266 2.57c.469 2.923 2.198 4.651 4.912 4.976a5.58 5.58 0 0 0 6.132-3.547 9.52 9.52 0 0 0-.209-7.82 5.47 5.47 0 0 0-5.76-3.184 5.33 5.33 0 0 0-4.759 3.934 27 27 0 0 0-.582 3.07zm37.499 2.974a6.4 6.4 0 0 1-6.254 5.655c-4.977.25-7.312-3.054-7.683-6.867a11 11 0 0 1 .97-6.06 6.76 6.76 0 0 1 7.036-3.773 6.47 6.47 0 0 1 5.736 4.92 33 33 0 0 1 .557 3.636h-13.07c-.242 3.458 1.616 6.238 4.25 6.908 3.28.807 6.083-.614 7.101-3.733.226-.8.638-.913 1.365-.686zm-12.717-3.596h11.69c-.073-3.683-2.366-6.36-5.478-6.39-3.512-.058-6.06 2.512-6.212 6.39m15.133 3.676h1.146a4.6 4.6 0 0 0 2.698 3.96 7.05 7.05 0 0 0 6.124-.162 2.75 2.75 0 0 0 1.616-2.707 2.496 2.496 0 0 0-1.68-2.496c-1.26-.47-2.602-.728-3.886-1.14a28.5 28.5 0 0 1-3.91-1.43c-2.07-1.01-2.198-4.944.145-6.19a8.25 8.25 0 0 1 7.885-.121 4.15 4.15 0 0 1 2.101 4.234h-.982c0-.047-.09-.089-.09-.137-.121-3.133-2.755-4.113-5.582-3.838a7.1 7.1 0 0 0-2.424.735 2.42 2.42 0 0 0-1.405 2.424 2.42 2.42 0 0 0 1.616 2.278c1.234.453 2.544.744 3.821 1.099l3.086.807a3.65 3.65 0 0 1 2.504 3.288 3.89 3.89 0 0 1-2.092 4.04c-2.698 1.527-7.142 1.123-9.122-.807a5.4 5.4 0 0 1-1.566-3.837zm27.323-6.05h-1.075c0-.146-.057-.286-.073-.397a3.51 3.51 0 0 0-2.86-3.377 7.05 7.05 0 0 0-4.532.219 2.75 2.75 0 0 0-1.996 2.626 2.535 2.535 0 0 0 1.939 2.553l4.912 1.26q.796.192 1.566.477a4.05 4.05 0 0 1 2.677 3.686 4.03 4.03 0 0 1-2.468 3.836 9 9 0 0 1-7.271.073 5.04 5.04 0 0 1-3.038-4.896h1.05a5.89 5.89 0 0 0 8.968 3.75 2.89 2.89 0 0 0 1.55-2.699 2.5 2.5 0 0 0-1.704-2.48c-1.261-.47-2.602-.72-3.886-1.14a29 29 0 0 1-3.934-1.414c-2.02-.994-2.182-4.896.121-6.14a8.14 8.14 0 0 1 8.015-.09 4.23 4.23 0 0 1 2.028 4.145zM29.063 55.41a1.85 1.85 0 0 1-2.295-.872L22.59 48.76l-.605-.807-4.848 6.592a1.776 1.776 0 0 1-2.181.857l6.245-8.378-5.81-7.57a1.93 1.93 0 0 1 2.302.806l4.329 5.848 4.355-5.825a1.737 1.737 0 0 1 2.165-.808l-2.255 2.991-3.054 3.976a.807.807 0 0 0 0 1.203l5.817 7.764zm26.516-16.037v1.14a5.86 5.86 0 0 0-6.238 6.051v8.887h-1.155V39.445h1.14v3.28c1.397-2.393 3.554-3.28 6.26-3.345zM.002 46.92l.509-2.513c1.397-4.969 7.094-7.037 11.013-3.959 2.294 1.802 2.867 4.355 2.755 7.231H1.35c-.209 5.139 3.498 8.241 8.24 6.658a4.94 4.94 0 0 0 3.127-3.483c.25-.807.665-.945 1.422-.712a6.56 6.56 0 0 1-3.135 4.792 7.595 7.595 0 0 1-8.847-1.131 7.96 7.96 0 0 1-1.987-4.67c0-.286-.095-.552-.162-.808Q0 47.607 0 46.92zm1.365-.347h11.69c-.072-3.725-2.423-6.367-5.558-6.392-3.49-.047-5.987 2.537-6.14 6.375z" />
-              </svg>
-              <span class="mt-2 text-sm font-medium">ExpressJS</span>
-            </div>
-
-            <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                <path fill="#599636"
-                  d="m50.146.273 2.668 5.012c.6.925 1.25 1.744 2.016 2.506a70 70 0 0 1 6.262 7.08c4.521 5.938 7.57 12.531 9.749 19.662 1.306 4.356 2.015 8.824 2.069 13.343.218 13.508-4.413 25.107-13.75 34.747a40 40 0 0 1-4.905 4.194c-.925 0-1.363-.71-1.744-1.363a11.2 11.2 0 0 1-1.362-3.921c-.328-1.635-.544-3.269-.438-4.956v-.763c-.075-.162-.89-75.157-.566-75.541" />
-                <path fill="#6cac48"
-                  d="M50.146.108c-.11-.22-.22-.054-.329.053.053 1.093-.328 2.068-.925 3-.656.924-1.524 1.634-2.396 2.396-4.844 4.194-8.656 9.259-11.709 14.924-4.062 7.624-6.156 15.796-6.75 24.398-.271 3.103.982 14.052 1.96 17.211 2.669 8.387 7.462 15.415 13.67 21.515 1.526 1.468 3.157 2.83 4.844 4.14.49 0 .544-.438.656-.763a15 15 0 0 0 .491-2.124l1.094-8.169z" />
-                <path fill="#c2bfbf"
-                  d="M52.814 90.135c.11-1.25.71-2.287 1.362-3.321-.656-.272-1.143-.813-1.524-1.416-.33-.57-.601-1.173-.813-1.797-.762-2.287-.925-4.687-1.143-7.024V75.16c-.272.22-.329 2.069-.329 2.344a54 54 0 0 1-.98 7.353c-.163.98-.273 1.959-.876 2.83 0 .11 0 .22.053.382.981 2.887 1.25 5.827 1.416 8.824v1.094c0 1.306-.053 1.03 1.031 1.468.438.163.925.22 1.362.544.329 0 .382-.272.382-.49l-.163-1.797V92.7c-.053-.875.11-1.744.219-2.563z" />
-              </svg>
-              <span class="mt-2 text-sm font-medium">MongoDB</span>
-            </div>
-
-            <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                <g clip-path="url(#a)">
-                  <path fill="#61dafb" d="M50.307 58.816a8.816 8.816 0 1 0 0-17.632 8.816 8.816 0 0 0 0 17.632" />
-                  <path stroke="#61dafb" stroke-width="5"
-                    d="M50.307 68.063c26.126 0 47.306-8.087 47.306-18.063s-21.18-18.062-47.306-18.062C24.18 31.938 3 40.024 3 50s21.18 18.063 47.307 18.063Z" />
-                  <path stroke="#61dafb" stroke-width="5"
-                    d="M34.664 59.031C47.727 81.658 65.321 95.957 73.96 90.97c8.64-4.988 5.053-27.374-8.01-50C52.885 18.342 35.291 4.043 26.652 9.03s-5.052 27.374 8.011 50Z" />
-                  <path stroke="#61dafb" stroke-width="5"
-                    d="M34.664 40.969c-13.063 22.626-16.65 45.012-8.01 50 8.638 4.988 26.232-9.311 39.295-31.938s16.65-45.012 8.01-50c-8.638-4.988-26.232 9.311-39.295 31.938Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h100v100H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="mt-2 text-sm font-medium">React</span>
-            </div>
-
-            <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                <g fill="#000" clip-path="url(#a)">
-                  <path
-                    d="M7.107 49.999c0 16.979 9.867 31.65 24.175 38.604L10.82 32.543a42.7 42.7 0 0 0-3.714 17.456m71.85-2.165c0-5.3-1.904-8.972-3.537-11.83-2.175-3.532-4.212-6.524-4.212-10.058 0-3.943 2.99-7.613 7.202-7.613.19 0 .37.024.557.034-7.632-6.991-17.8-11.26-28.966-11.26-14.985 0-28.169 7.689-35.839 19.334 1.007.03 1.956.05 2.76.05 4.487 0 11.432-.544 11.432-.544 2.312-.136 2.585 3.26.276 3.533 0 0-2.325.274-4.91.41l15.62 46.46 9.387-28.152-6.683-18.31c-2.31-.135-4.498-.409-4.498-.409-2.312-.135-2.04-3.669.27-3.533 0 0 7.084.545 11.299.545 4.486 0 11.431-.545 11.431-.545 2.314-.136 2.586 3.26.275 3.534 0 0-2.328.273-4.909.408l15.5 46.11L75.69 61.7c1.856-5.932 3.267-10.194 3.267-13.866" />
-                  <path
-                    d="m50.753 53.75-12.87 37.396a42.9 42.9 0 0 0 12.118 1.748 42.9 42.9 0 0 0 14.243-2.43 3.6 3.6 0 0 1-.305-.592zm36.885-24.33c.184 1.366.288 2.834.288 4.41 0 4.353-.812 9.246-3.261 15.364L71.563 87.075C84.315 79.64 92.893 65.824 92.893 50a42.66 42.66 0 0 0-5.255-20.58" />
-                  <path
-                    d="M50 0C22.43 0 0 22.43 0 49.999 0 77.57 22.43 100 50 100s50.003-22.429 50.003-50.002C100.003 22.429 77.569 0 50.001 0m0 97.708c-26.305 0-47.707-21.402-47.707-47.71C2.293 23.695 23.694 2.294 50 2.294c26.304 0 47.705 21.401 47.705 47.706 0 26.307-21.402 47.71-47.705 47.71" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h100v100H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="mt-2 text-sm font-medium">WordPress</span>
-            </div>
-
-            <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                <g clip-path="url(#a)">
-                  <path fill="#06b6d4"
-                    d="M50 20q-20 0-25 19.994 7.5-9.997 17.5-7.498c3.804.95 6.522 3.71 9.532 6.764 4.902 4.974 10.576 10.731 22.969 10.731q20 0 24.999-19.995-7.5 9.997-17.5 7.5c-3.803-.951-6.521-3.71-9.531-6.765C68.067 25.758 62.392 20 50 20M25 49.991q-20 0-25 19.995 7.5-9.998 17.5-7.498c3.803.952 6.522 3.71 9.532 6.763C31.933 74.225 37.608 79.984 50 79.984q20 0 25-19.995-7.5 9.997-17.5 7.498c-3.803-.95-6.522-3.71-9.532-6.763C43.066 55.75 37.393 49.991 25 49.991" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h100v100H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="mt-2 text-sm font-medium">Tailwind</span>
-            </div>
-
-            <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110 items-center p-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                <g clip-path="url(#a)">
-                  <path fill="#fff"
-                    d="M50 99.999c27.614 0 50-22.386 50-50s-22.386-50-50-50-50 22.386-50 50 22.386 50 50 50" />
-                  <path fill="url(#b)"
-                    d="M83.06 87.51 38.412 30H30v39.983h6.73V38.545L77.777 91.58a50 50 0 0 0 5.283-4.07" />
-                  <path fill="url(#c)" d="M70.556 29.999h-6.667v40h6.667z" />
-                </g>
-                <defs>
-                  <linearGradient id="b" x1="60.556" x2="80.278" y1="64.721" y2="89.166" gradientUnits="userSpaceOnUse">
-                    <stop />
-                    <stop offset="1" stop-color="#fff" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient id="c" x1="67.222" x2="67.111" y1="29.999" y2="59.374" gradientUnits="userSpaceOnUse">
-                    <stop />
-                    <stop offset="1" stop-color="#fff" stop-opacity="0" />
-                  </linearGradient>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h100v100H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="mt-2 text-sm font-medium">NextJS</span>
-            </div>
-            <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110 items-center p-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                <path fill="#6e81b6" fill-rule="evenodd"
-                  d="M50 75.677c27.614 0 50-11.345 50-25.338S77.614 25 50 25 0 36.345 0 50.339s22.386 25.338 50 25.338"
-                  clip-rule="evenodd" />
-                <path fill="#fff" fill-rule="evenodd"
-                  d="m60.133 58.528 2.48-12.764c.56-2.881.095-5.03-1.382-6.388-1.431-1.314-3.86-1.953-7.427-1.953H49.51l1.229-6.324a.812.812 0 0 0-.798-.969h-5.928a.81.81 0 0 0-.798.659l-2.634 13.55c-.24-1.524-.83-2.835-1.774-3.916-1.74-1.99-4.49-3-8.176-3H19.14a.814.814 0 0 0-.798.658l-5.33 27.43a.81.81 0 0 0 .798.968h5.974c.39 0 .724-.276.798-.66l1.29-6.634h4.447c2.334 0 4.295-.252 5.826-.75 1.566-.51 3.006-1.373 4.276-2.562a13.1 13.1 0 0 0 2.526-3.136l-1.065 5.48a.81.81 0 0 0 .798.968h5.929c.39 0 .723-.276.798-.658l2.926-15.056H52.4c1.734 0 2.242.345 2.38.493.125.135.385.612.093 2.116l-2.358 12.136a.813.813 0 0 0 .798.968h6.023a.81.81 0 0 0 .797-.656M32.65 47.981c-.373 1.914-1.074 3.279-2.086 4.057-1.028.793-2.672 1.194-4.886 1.194h-2.649l1.915-9.854h3.424c2.515 0 3.529.538 3.936.988.564.625.683 1.876.346 3.615m52.455-7.558c-1.738-1.99-4.488-3-8.175-3H65.44a.81.81 0 0 0-.798.658l-5.33 27.43a.814.814 0 0 0 .797.968h5.975c.39 0 .724-.276.798-.66l1.29-6.634h4.448c2.335 0 4.294-.252 5.826-.75 1.565-.51 3.006-1.373 4.275-2.562a13.1 13.1 0 0 0 2.591-3.247 13.2 13.2 0 0 0 1.41-3.915c.679-3.495.135-6.283-1.617-8.288m-5.817 7.558c-.373 1.914-1.074 3.279-2.085 4.057-1.028.793-2.672 1.194-4.886 1.194h-2.65l1.915-9.854h3.424c2.516 0 3.529.538 3.937.988.562.625.683 1.876.345 3.615"
-                  clip-rule="evenodd" />
-                <path fill="#000" fill-rule="evenodd"
-                  d="M28.197 42.565q3.405 0 4.54 1.257 1.133 1.258.54 4.315-.621 3.184-2.388 4.546-1.77 1.362-5.383 1.362h-3.635l2.231-11.48zm-14.559 23.1h5.975l1.418-7.291h5.118q3.387 0 5.575-.713 2.187-.712 3.977-2.386a12.2 12.2 0 0 0 2.431-3.045q.93-1.665 1.32-3.674.949-4.877-1.429-7.598t-7.563-2.721H18.97zm30.203-34.721h5.928l-1.417 7.293h5.282q4.984 0 6.876 1.738t1.135 5.634l-2.48 12.765h-6.023L55.5 46.237q.403-2.072-.296-2.825t-2.974-.753h-4.738l-3.054 15.715H38.51zm30.994 11.621q3.405 0 4.54 1.257 1.132 1.258.54 4.315-.619 3.184-2.388 4.546t-5.381 1.362h-3.635l2.23-11.48zm-14.56 23.1h5.976l1.417-7.291h5.118q3.389 0 5.575-.713 2.189-.712 3.978-2.386a12.2 12.2 0 0 0 2.43-3.045 12.3 12.3 0 0 0 1.322-3.674q.948-4.877-1.43-7.598t-7.563-2.721h-11.49z"
-                  clip-rule="evenodd" />
-              </svg>
-              <span class="mt-2 text-sm font-medium">PHP</span>
-            </div>
-            <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110 items-center p-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                <g clip-path="url(#a)">
-                  <path fill="#f7df1e" d="M100 0H0v100h100z" />
+              <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
                   <path fill="#000"
-                    d="M67.175 78.125c2.014 3.29 4.635 5.707 9.27 5.707 3.893 0 6.38-1.946 6.38-4.635 0-3.222-2.555-4.364-6.84-6.238l-2.35-1.008c-6.781-2.89-11.286-6.508-11.286-14.159 0-7.047 5.37-12.413 13.762-12.413 5.975 0 10.27 2.08 13.365 7.524l-7.317 4.699c-1.611-2.89-3.35-4.027-6.048-4.027-2.752 0-4.497 1.746-4.497 4.027 0 2.819 1.746 3.96 5.778 5.706l2.35 1.006c7.983 3.424 12.491 6.915 12.491 14.762 0 8.46-6.646 13.096-15.571 13.096-8.727 0-14.365-4.16-17.124-9.61zm-33.196.815c1.477 2.619 2.82 4.833 6.048 4.833 3.087 0 5.035-1.208 5.035-5.905V45.916h9.397v32.08c0 9.73-5.705 14.158-14.032 14.158-7.524 0-11.881-3.894-14.097-8.583z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h100v100H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="mt-2 text-sm font-medium">JS</span>
+                    d="M31.015 61.316v-21.88h1.187v3.442q.21-.23.387-.486a5.88 5.88 0 0 1 5.364-3.328c2.706-.08 4.905.92 6.197 3.328a10.7 10.7 0 0 1 .258 9.808c-1.204 2.699-4.177 4.04-7.36 3.547a5.95 5.95 0 0 1-4.751-3.134v8.7zm1.187-14.14.266 2.57c.469 2.923 2.198 4.651 4.912 4.976a5.58 5.58 0 0 0 6.132-3.547 9.52 9.52 0 0 0-.209-7.82 5.47 5.47 0 0 0-5.76-3.184 5.33 5.33 0 0 0-4.759 3.934 27 27 0 0 0-.582 3.07zm37.499 2.974a6.4 6.4 0 0 1-6.254 5.655c-4.977.25-7.312-3.054-7.683-6.867a11 11 0 0 1 .97-6.06 6.76 6.76 0 0 1 7.036-3.773 6.47 6.47 0 0 1 5.736 4.92 33 33 0 0 1 .557 3.636h-13.07c-.242 3.458 1.616 6.238 4.25 6.908 3.28.807 6.083-.614 7.101-3.733.226-.8.638-.913 1.365-.686zm-12.717-3.596h11.69c-.073-3.683-2.366-6.36-5.478-6.39-3.512-.058-6.06 2.512-6.212 6.39m15.133 3.676h1.146a4.6 4.6 0 0 0 2.698 3.96 7.05 7.05 0 0 0 6.124-.162 2.75 2.75 0 0 0 1.616-2.707 2.496 2.496 0 0 0-1.68-2.496c-1.26-.47-2.602-.728-3.886-1.14a28.5 28.5 0 0 1-3.91-1.43c-2.07-1.01-2.198-4.944.145-6.19a8.25 8.25 0 0 1 7.885-.121 4.15 4.15 0 0 1 2.101 4.234h-.982c0-.047-.09-.089-.09-.137-.121-3.133-2.755-4.113-5.582-3.838a7.1 7.1 0 0 0-2.424.735 2.42 2.42 0 0 0-1.405 2.424 2.42 2.42 0 0 0 1.616 2.278c1.234.453 2.544.744 3.821 1.099l3.086.807a3.65 3.65 0 0 1 2.504 3.288 3.89 3.89 0 0 1-2.092 4.04c-2.698 1.527-7.142 1.123-9.122-.807a5.4 5.4 0 0 1-1.566-3.837zm27.323-6.05h-1.075c0-.146-.057-.286-.073-.397a3.51 3.51 0 0 0-2.86-3.377 7.05 7.05 0 0 0-4.532.219 2.75 2.75 0 0 0-1.996 2.626 2.535 2.535 0 0 0 1.939 2.553l4.912 1.26q.796.192 1.566.477a4.05 4.05 0 0 1 2.677 3.686 4.03 4.03 0 0 1-2.468 3.836 9 9 0 0 1-7.271.073 5.04 5.04 0 0 1-3.038-4.896h1.05a5.89 5.89 0 0 0 8.968 3.75 2.89 2.89 0 0 0 1.55-2.699 2.5 2.5 0 0 0-1.704-2.48c-1.261-.47-2.602-.72-3.886-1.14a29 29 0 0 1-3.934-1.414c-2.02-.994-2.182-4.896.121-6.14a8.14 8.14 0 0 1 8.015-.09 4.23 4.23 0 0 1 2.028 4.145zM29.063 55.41a1.85 1.85 0 0 1-2.295-.872L22.59 48.76l-.605-.807-4.848 6.592a1.776 1.776 0 0 1-2.181.857l6.245-8.378-5.81-7.57a1.93 1.93 0 0 1 2.302.806l4.329 5.848 4.355-5.825a1.737 1.737 0 0 1 2.165-.808l-2.255 2.991-3.054 3.976a.807.807 0 0 0 0 1.203l5.817 7.764zm26.516-16.037v1.14a5.86 5.86 0 0 0-6.238 6.051v8.887h-1.155V39.445h1.14v3.28c1.397-2.393 3.554-3.28 6.26-3.345zM.002 46.92l.509-2.513c1.397-4.969 7.094-7.037 11.013-3.959 2.294 1.802 2.867 4.355 2.755 7.231H1.35c-.209 5.139 3.498 8.241 8.24 6.658a4.94 4.94 0 0 0 3.127-3.483c.25-.807.665-.945 1.422-.712a6.56 6.56 0 0 1-3.135 4.792 7.595 7.595 0 0 1-8.847-1.131 7.96 7.96 0 0 1-1.987-4.67c0-.286-.095-.552-.162-.808Q0 47.607 0 46.92zm1.365-.347h11.69c-.072-3.725-2.423-6.367-5.558-6.392-3.49-.047-5.987 2.537-6.14 6.375z" />
+                </svg>
+                <span class="mt-2 text-sm font-medium">ExpressJS</span>
+              </div>
+
+              <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                  <path fill="#599636"
+                    d="m50.146.273 2.668 5.012c.6.925 1.25 1.744 2.016 2.506a70 70 0 0 1 6.262 7.08c4.521 5.938 7.57 12.531 9.749 19.662 1.306 4.356 2.015 8.824 2.069 13.343.218 13.508-4.413 25.107-13.75 34.747a40 40 0 0 1-4.905 4.194c-.925 0-1.363-.71-1.744-1.363a11.2 11.2 0 0 1-1.362-3.921c-.328-1.635-.544-3.269-.438-4.956v-.763c-.075-.162-.89-75.157-.566-75.541" />
+                  <path fill="#6cac48"
+                    d="M50.146.108c-.11-.22-.22-.054-.329.053.053 1.093-.328 2.068-.925 3-.656.924-1.524 1.634-2.396 2.396-4.844 4.194-8.656 9.259-11.709 14.924-4.062 7.624-6.156 15.796-6.75 24.398-.271 3.103.982 14.052 1.96 17.211 2.669 8.387 7.462 15.415 13.67 21.515 1.526 1.468 3.157 2.83 4.844 4.14.49 0 .544-.438.656-.763a15 15 0 0 0 .491-2.124l1.094-8.169z" />
+                  <path fill="#c2bfbf"
+                    d="M52.814 90.135c.11-1.25.71-2.287 1.362-3.321-.656-.272-1.143-.813-1.524-1.416-.33-.57-.601-1.173-.813-1.797-.762-2.287-.925-4.687-1.143-7.024V75.16c-.272.22-.329 2.069-.329 2.344a54 54 0 0 1-.98 7.353c-.163.98-.273 1.959-.876 2.83 0 .11 0 .22.053.382.981 2.887 1.25 5.827 1.416 8.824v1.094c0 1.306-.053 1.03 1.031 1.468.438.163.925.22 1.362.544.329 0 .382-.272.382-.49l-.163-1.797V92.7c-.053-.875.11-1.744.219-2.563z" />
+                </svg>
+                <span class="mt-2 text-sm font-medium">MongoDB</span>
+              </div>
+
+              <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                  <g clip-path="url(#a)">
+                    <path fill="#61dafb" d="M50.307 58.816a8.816 8.816 0 1 0 0-17.632 8.816 8.816 0 0 0 0 17.632" />
+                    <path stroke="#61dafb" stroke-width="5"
+                      d="M50.307 68.063c26.126 0 47.306-8.087 47.306-18.063s-21.18-18.062-47.306-18.062C24.18 31.938 3 40.024 3 50s21.18 18.063 47.307 18.063Z" />
+                    <path stroke="#61dafb" stroke-width="5"
+                      d="M34.664 59.031C47.727 81.658 65.321 95.957 73.96 90.97c8.64-4.988 5.053-27.374-8.01-50C52.885 18.342 35.291 4.043 26.652 9.03s-5.052 27.374 8.011 50Z" />
+                    <path stroke="#61dafb" stroke-width="5"
+                      d="M34.664 40.969c-13.063 22.626-16.65 45.012-8.01 50 8.638 4.988 26.232-9.311 39.295-31.938s16.65-45.012 8.01-50c-8.638-4.988-26.232 9.311-39.295 31.938Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h100v100H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="mt-2 text-sm font-medium">React</span>
+              </div>
+
+              <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                  <g fill="#000" clip-path="url(#a)">
+                    <path
+                      d="M7.107 49.999c0 16.979 9.867 31.65 24.175 38.604L10.82 32.543a42.7 42.7 0 0 0-3.714 17.456m71.85-2.165c0-5.3-1.904-8.972-3.537-11.83-2.175-3.532-4.212-6.524-4.212-10.058 0-3.943 2.99-7.613 7.202-7.613.19 0 .37.024.557.034-7.632-6.991-17.8-11.26-28.966-11.26-14.985 0-28.169 7.689-35.839 19.334 1.007.03 1.956.05 2.76.05 4.487 0 11.432-.544 11.432-.544 2.312-.136 2.585 3.26.276 3.533 0 0-2.325.274-4.91.41l15.62 46.46 9.387-28.152-6.683-18.31c-2.31-.135-4.498-.409-4.498-.409-2.312-.135-2.04-3.669.27-3.533 0 0 7.084.545 11.299.545 4.486 0 11.431-.545 11.431-.545 2.314-.136 2.586 3.26.275 3.534 0 0-2.328.273-4.909.408l15.5 46.11L75.69 61.7c1.856-5.932 3.267-10.194 3.267-13.866" />
+                    <path
+                      d="m50.753 53.75-12.87 37.396a42.9 42.9 0 0 0 12.118 1.748 42.9 42.9 0 0 0 14.243-2.43 3.6 3.6 0 0 1-.305-.592zm36.885-24.33c.184 1.366.288 2.834.288 4.41 0 4.353-.812 9.246-3.261 15.364L71.563 87.075C84.315 79.64 92.893 65.824 92.893 50a42.66 42.66 0 0 0-5.255-20.58" />
+                    <path
+                      d="M50 0C22.43 0 0 22.43 0 49.999 0 77.57 22.43 100 50 100s50.003-22.429 50.003-50.002C100.003 22.429 77.569 0 50.001 0m0 97.708c-26.305 0-47.707-21.402-47.707-47.71C2.293 23.695 23.694 2.294 50 2.294c26.304 0 47.705 21.401 47.705 47.706 0 26.307-21.402 47.71-47.705 47.71" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h100v100H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="mt-2 text-sm font-medium">WordPress</span>
+              </div>
+
+              <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110items-center p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                  <g clip-path="url(#a)">
+                    <path fill="#06b6d4"
+                      d="M50 20q-20 0-25 19.994 7.5-9.997 17.5-7.498c3.804.95 6.522 3.71 9.532 6.764 4.902 4.974 10.576 10.731 22.969 10.731q20 0 24.999-19.995-7.5 9.997-17.5 7.5c-3.803-.951-6.521-3.71-9.531-6.765C68.067 25.758 62.392 20 50 20M25 49.991q-20 0-25 19.995 7.5-9.998 17.5-7.498c3.803.952 6.522 3.71 9.532 6.763C31.933 74.225 37.608 79.984 50 79.984q20 0 25-19.995-7.5 9.997-17.5 7.498c-3.803-.95-6.522-3.71-9.532-6.763C43.066 55.75 37.393 49.991 25 49.991" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h100v100H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="mt-2 text-sm font-medium">Tailwind</span>
+              </div>
+
+              <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110 items-center p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                  <g clip-path="url(#a)">
+                    <path fill="#fff"
+                      d="M50 99.999c27.614 0 50-22.386 50-50s-22.386-50-50-50-50 22.386-50 50 22.386 50 50 50" />
+                    <path fill="url(#b)"
+                      d="M83.06 87.51 38.412 30H30v39.983h6.73V38.545L77.777 91.58a50 50 0 0 0 5.283-4.07" />
+                    <path fill="url(#c)" d="M70.556 29.999h-6.667v40h6.667z" />
+                  </g>
+                  <defs>
+                    <linearGradient id="b" x1="60.556" x2="80.278" y1="64.721" y2="89.166"
+                      gradientUnits="userSpaceOnUse">
+                      <stop />
+                      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="c" x1="67.222" x2="67.111" y1="29.999" y2="59.374"
+                      gradientUnits="userSpaceOnUse">
+                      <stop />
+                      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                    </linearGradient>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h100v100H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="mt-2 text-sm font-medium">NextJS</span>
+              </div>
+              <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110 items-center p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                  <path fill="#6e81b6" fill-rule="evenodd"
+                    d="M50 75.677c27.614 0 50-11.345 50-25.338S77.614 25 50 25 0 36.345 0 50.339s22.386 25.338 50 25.338"
+                    clip-rule="evenodd" />
+                  <path fill="#fff" fill-rule="evenodd"
+                    d="m60.133 58.528 2.48-12.764c.56-2.881.095-5.03-1.382-6.388-1.431-1.314-3.86-1.953-7.427-1.953H49.51l1.229-6.324a.812.812 0 0 0-.798-.969h-5.928a.81.81 0 0 0-.798.659l-2.634 13.55c-.24-1.524-.83-2.835-1.774-3.916-1.74-1.99-4.49-3-8.176-3H19.14a.814.814 0 0 0-.798.658l-5.33 27.43a.81.81 0 0 0 .798.968h5.974c.39 0 .724-.276.798-.66l1.29-6.634h4.447c2.334 0 4.295-.252 5.826-.75 1.566-.51 3.006-1.373 4.276-2.562a13.1 13.1 0 0 0 2.526-3.136l-1.065 5.48a.81.81 0 0 0 .798.968h5.929c.39 0 .723-.276.798-.658l2.926-15.056H52.4c1.734 0 2.242.345 2.38.493.125.135.385.612.093 2.116l-2.358 12.136a.813.813 0 0 0 .798.968h6.023a.81.81 0 0 0 .797-.656M32.65 47.981c-.373 1.914-1.074 3.279-2.086 4.057-1.028.793-2.672 1.194-4.886 1.194h-2.649l1.915-9.854h3.424c2.515 0 3.529.538 3.936.988.564.625.683 1.876.346 3.615m52.455-7.558c-1.738-1.99-4.488-3-8.175-3H65.44a.81.81 0 0 0-.798.658l-5.33 27.43a.814.814 0 0 0 .797.968h5.975c.39 0 .724-.276.798-.66l1.29-6.634h4.448c2.335 0 4.294-.252 5.826-.75 1.565-.51 3.006-1.373 4.275-2.562a13.1 13.1 0 0 0 2.591-3.247 13.2 13.2 0 0 0 1.41-3.915c.679-3.495.135-6.283-1.617-8.288m-5.817 7.558c-.373 1.914-1.074 3.279-2.085 4.057-1.028.793-2.672 1.194-4.886 1.194h-2.65l1.915-9.854h3.424c2.516 0 3.529.538 3.937.988.562.625.683 1.876.345 3.615"
+                    clip-rule="evenodd" />
+                  <path fill="#000" fill-rule="evenodd"
+                    d="M28.197 42.565q3.405 0 4.54 1.257 1.133 1.258.54 4.315-.621 3.184-2.388 4.546-1.77 1.362-5.383 1.362h-3.635l2.231-11.48zm-14.559 23.1h5.975l1.418-7.291h5.118q3.387 0 5.575-.713 2.187-.712 3.977-2.386a12.2 12.2 0 0 0 2.431-3.045q.93-1.665 1.32-3.674.949-4.877-1.429-7.598t-7.563-2.721H18.97zm30.203-34.721h5.928l-1.417 7.293h5.282q4.984 0 6.876 1.738t1.135 5.634l-2.48 12.765h-6.023L55.5 46.237q.403-2.072-.296-2.825t-2.974-.753h-4.738l-3.054 15.715H38.51zm30.994 11.621q3.405 0 4.54 1.257 1.132 1.258.54 4.315-.619 3.184-2.388 4.546t-5.381 1.362h-3.635l2.23-11.48zm-14.56 23.1h5.976l1.417-7.291h5.118q3.389 0 5.575-.713 2.189-.712 3.978-2.386a12.2 12.2 0 0 0 2.43-3.045 12.3 12.3 0 0 0 1.322-3.674q.948-4.877-1.43-7.598t-7.563-2.721h-11.49z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span class="mt-2 text-sm font-medium">PHP</span>
+              </div>
+              <div class="flex flex-col text-center hover:-translate-y-1 hover:scale-110 items-center p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                  <g clip-path="url(#a)">
+                    <path fill="#f7df1e" d="M100 0H0v100h100z" />
+                    <path fill="#000"
+                      d="M67.175 78.125c2.014 3.29 4.635 5.707 9.27 5.707 3.893 0 6.38-1.946 6.38-4.635 0-3.222-2.555-4.364-6.84-6.238l-2.35-1.008c-6.781-2.89-11.286-6.508-11.286-14.159 0-7.047 5.37-12.413 13.762-12.413 5.975 0 10.27 2.08 13.365 7.524l-7.317 4.699c-1.611-2.89-3.35-4.027-6.048-4.027-2.752 0-4.497 1.746-4.497 4.027 0 2.819 1.746 3.96 5.778 5.706l2.35 1.006c7.983 3.424 12.491 6.915 12.491 14.762 0 8.46-6.646 13.096-15.571 13.096-8.727 0-14.365-4.16-17.124-9.61zm-33.196.815c1.477 2.619 2.82 4.833 6.048 4.833 3.087 0 5.035-1.208 5.035-5.905V45.916h9.397v32.08c0 9.73-5.705 14.158-14.032 14.158-7.524 0-11.881-3.894-14.097-8.583z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h100v100H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="mt-2 text-sm font-medium">JS</span>
+              </div>
             </div>
           </div>
+
+
         </div>
 
       </div>
     </div>
   </section>
-  <section class="p-4 py-20" data-carousel="work">
+  <section class="p-4 py-20" data-carousel="work" data-aos="fade-up">
     <div class="w-full max-w-7xl mx-auto">
       <div class="pb-8 flex justify-start items-center gap-8">
-        <h2 class="text-4xl lg:text-5xl pb-4">My work</h2>
+        <h2 class="text-4xl lg:text-5xl">My work</h2>
 
         <!-- Arrows (md+) -->
-        <div class="flex gap-4 text-md">
+        <div class="flex gap-4 text-xs">
           <button type="button" data-prev aria-label="Previous"
             class="flex items-center justify-center text-black border border-black rounded-full p-2">
             <i class="bi bi-arrow-left"></i>
@@ -232,15 +236,18 @@
       <div data-track class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2
                [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <!-- Slide 1 -->
-        <a href="" class="w-[85%] shrink-0 snap-start md:w-[48%] lg:w-[32%] flex flex-col gap-2">
+        <a href="#" class="work-slide w-[85%] shrink-0 snap-start md:w-[48%] lg:w-[32%] flex flex-col gap-2"
+          data-title="SESH | Workout Tracker" data-desc="Styled with Shadcn/Tailwind, backend driven by Express, frontend powered by React & Redux Toolkit, with a MongoDB database solution. Add 'Seshes' - a record comprised of 'Workouts' - exercises within that Sesh. Search for Seshes by date,
+            and add profile data." data-link="https://sesh-app.onrender.com"
+          data-stack="Tailwind, Express, React, Mongo DB" data-img="./assets/DB.png">
           <div class="max-h-[300px] md:max-h-[500px] overflow-hidden rounded-xl shadow-xl relative">
             <i
               class="flex items-center justify-center text-white rounded-full bg-black p-2 bi bi-arrow-up-right absolute top-4 right-4"></i>
-            <img class="w-full"
-              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900&auto=format&fit=crop&q=60" alt="">
+            <img class="w-full" src="./assets/sesh-pic.jpg" alt="Sesh app screenshot">
           </div>
-          <h3 class="text-2xl pt-4">New collection</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <h3 class="text-2xl pt-4">SESH - Workout Tracker</h3>
+          <p class="text-gray-600"></p>Workout tracker built with Shadcn/Tailwind, Express, React & RTK, and Mongo DB
+          </p>
         </a>
 
         <!-- Slide 2 -->
@@ -273,9 +280,9 @@
             <i
               class="flex items-center justify-center text-white rounded-full bg-black p-2 bi bi-arrow-up-right absolute top-4 right-4"></i>
             <img class="w-full"
-              src="https://images.unsplash.com/photo-1520975958225-9c38fbb62ea0?w=900&auto=format&fit=crop&q=60" alt="">
+              src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=900&auto=format&fit=crop&q=60" alt="">
           </div>
-          <h3 class="text-2xl pt-4">Highlights</h3>
+          <h3 class="text-2xl pt-4">Classics</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
         </a>
       </div>
@@ -437,6 +444,37 @@
     integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
     data-cf-beacon='{"rayId":"9bddb11e1f85ef48","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"5070e21320304a1ba2b0a42ce9682840"}'
     crossorigin="anonymous"></script>
+
+  <!-- Drawer + overlay -->
+  <div id="workDrawer" class="fixed inset-0 z-50 hidden" aria-hidden="true">
+    <!-- Overlay -->
+    <button id="workDrawerOverlay" class="absolute inset-0 bg-black/50" aria-label="Close" type="button"></button>
+
+    <!-- Panel -->
+    <aside id="workDrawerPanel" class="absolute max-w-md right-0 top-0 h-full w-full bg-white shadow-2xl
+           translate-x-full transition-transform duration-300 ease-out
+           flex flex-col" role="dialog" aria-modal="true" aria-labelledby="workDrawerTitle">
+      <div class="p-6 border-b flex items-center gap-4">
+        <h3 id="workDrawerTitle" class="text-xl font-semibold">Project</h3>
+        <button id="workDrawerClose"
+          class="ml-auto rounded-full border border-black p-2 hover:bg-black hover:text-white" type="button"
+          aria-label="Close drawer">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto">
+        <img id="workDrawerImg" class="max-w-md rounded-xl shadow mb-4" src="" alt="" />
+        <p id="workDrawerDesc" class="text-base leading-7 text-gray-700"></p>
+
+        <a id="workDrawerLink" href="#"
+          class="inline-flex items-center gap-2 mt-6 rounded-full border border-black px-4 py-2 hover:bg-black hover:text-white">
+          View project <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </div>
+    </aside>
+  </div>
+
 </body>
 
 </html>

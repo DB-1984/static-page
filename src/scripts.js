@@ -3,31 +3,113 @@
   if (!root) return;
 
   const track = root.querySelector("[data-track]");
-  const slides = Array.from(track.children);
+  if (!track) return;
+
   const prevBtn = root.querySelector("[data-prev]");
   const nextBtn = root.querySelector("[data-next]");
+  if (!prevBtn || !nextBtn) return;
 
-  if (!track || slides.length === 0 || !prevBtn || !nextBtn) return;
+  // How far to move each click. Tune 0.9 → 1.0
+  const getStep = () => Math.max(1, Math.floor(track.clientWidth * 0.9));
 
-  let currentIndex = 0;
-  let rafId = null;
-
-  const clampIndex = (i) => (i + slides.length) % slides.length;
-
-  const scrollToIndex = (i) => {
-    currentIndex = clampIndex(i);
-    track.scrollTo({
-      left: slides[currentIndex].offsetLeft,
+  const go = (dir) => {
+    track.scrollBy({
+      left: dir * getStep(),
       behavior: "smooth",
     });
   };
 
-  prevBtn.addEventListener("click", () => scrollToIndex(currentIndex - 1));
-  nextBtn.addEventListener("click", () => scrollToIndex(currentIndex + 1));
-
-  // Optional: keyboard support when focused
-  root.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowLeft") scrollToIndex(currentIndex - 1);
-    if (e.key === "ArrowRight") scrollToIndex(currentIndex + 1);
+  prevBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    go(-1);
   });
+
+  nextBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    go(1);
+  });
+
+  root.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") go(-1);
+    if (e.key === "ArrowRight") go(1);
+  });
+})();
+
+(() => {
+  const drawer = document.getElementById("workDrawer");
+  const panel = document.getElementById("workDrawerPanel");
+  const overlay = document.getElementById("workDrawerOverlay");
+  const closeBtn = document.getElementById("workDrawerClose");
+  const imgEl = document.getElementById("workDrawerImg");
+  const titleEl = document.getElementById("workDrawerTitle");
+  const descEl = document.getElementById("workDrawerDesc");
+  const linkEl = document.getElementById("workDrawerLink");
+
+  if (!drawer || !panel || !closeBtn || !titleEl || !descEl || !linkEl) return;
+
+  let lastFocus = null;
+
+  function openDrawer(data) {
+    lastFocus = document.activeElement;
+
+    titleEl.textContent = data.title || "Project";
+    descEl.textContent = data.desc || "";
+
+    if (imgEl) {
+      if (data.img) {
+        imgEl.src = data.img;
+        imgEl.alt = data.title || "Project screenshot";
+        imgEl.classList.remove("hidden");
+      } else {
+        imgEl.classList.add("hidden");
+        imgEl.removeAttribute("src");
+      }
+    }
+
+    drawer.classList.remove("hidden");
+    drawer.setAttribute("aria-hidden", "false");
+
+    document.documentElement.classList.add("overflow-hidden");
+
+    requestAnimationFrame(() => {
+      panel.classList.remove("translate-x-full");
+    });
+
+    document.addEventListener("keydown", onKeydown);
+    closeBtn.focus();
+  }
+
+  function closeDrawer() {
+    panel.classList.add("translate-x-full");
+    drawer.setAttribute("aria-hidden", "true");
+
+    document.removeEventListener("keydown", onKeydown);
+
+    setTimeout(() => {
+      drawer.classList.add("hidden");
+      document.documentElement.classList.remove("overflow-hidden");
+      if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+    }, 300);
+  }
+
+  function onKeydown(e) {
+    if (e.key === "Escape") closeDrawer();
+  }
+
+  document
+    .querySelectorAll('[data-carousel="work"] .work-slide')
+    .forEach((slide) => {
+      slide.addEventListener("click", (e) => {
+        e.preventDefault();
+        openDrawer({
+          title: slide.dataset.title,
+          desc: slide.dataset.desc,
+          img: slide.dataset.img,
+          link: slide.dataset.link,
+        });
+      });
+    });
+
+  overlay?.addEventListener("click", closeDrawer);
+  closeBtn.addEventListener("click", closeDrawer);
 })();
