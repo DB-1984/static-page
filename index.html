@@ -17,11 +17,6 @@
   <script src="./src/scripts.js" defer></script>
   <link rel="stylesheet" href="./src/index.css">
   </script>
-  <style>
-    body {
-      font-family: "Inter", sans-serif;
-    }
-  </style>
 </head>
 
 <body>
@@ -34,7 +29,7 @@
         </div>
         <div class="flex items-center gap-8">
           <nav class="hidden lg:flex gap-8">
-            <a href="" class="hover:underline">Featured Projects</a>
+            <a href="#" data-scroll="#my-work" class="hover:underline">Featured Projects</a>
             <a href="" class="hover:underline">Contact</a>
           </nav>
         </div>
@@ -48,9 +43,9 @@
           class="flex w-full rounded-xl min-h-[400px] md:min-h-[600px] lg:min-h-[800px] bg-contain bg-no-repeat bg-center"
           style="background-image:url('./assets/DB.png')" data-aos="fade-in" data-aos-duration="2000">
           <div class="mt-auto flex flex-col md:flex-row gap-4 w-full">
-            <a href=""
+            <a href="#" data-scroll="#my-work"
               class="bg-white/80 hover:bg-black hover:text-white m-4 p-2 text-xl rounded-full w-full flex gap-4 justify-between items-center">
-              <span class="pl-2">Learn more</span>
+              <span class="pl-2">Featured Projects</span>
               <i
                 class="flex items-center justify-center bi bi-arrow-down bg-black text-white rounded-full p-1 w-[40px] h-[40px] text-center"></i>
             </a>
@@ -64,7 +59,7 @@
         </div>
         <div class="w-full flex flex-col gap-14" data-aos="fade-up">
           <div class="w-full h-full rounded-xl p-14 bg-gradient-to-tr from-zinc-100 to-gray-300  shadow-xl">
-            <h1 class="text-3xl font-bold lg:text-5xl mb-auto pb-10">
+            <h1 class="text-4xl font-bold lg:text-6xl mb-auto pb-10">
               Web-developer, designer & full-stack engineer
             </h1>
             <p class="text-lg/8 pb-4 lg:text-xl/8">
@@ -206,8 +201,6 @@
               </div>
             </div>
           </div>
-
-
         </div>
 
       </div>
@@ -215,7 +208,7 @@
   </section>
   <section class="p-4 py-20" data-carousel="work" data-aos="fade-up">
     <div class="w-full max-w-7xl mx-auto">
-      <div class="pb-8 flex justify-start items-center gap-8">
+      <div class="pb-8 flex justify-start items-center gap-8" id="my-work">
         <h2 class="text-4xl lg:text-5xl">My work</h2>
 
         <!-- Arrows (md+) -->
@@ -235,31 +228,35 @@
       <!-- Track -->
       <div data-track class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2
                [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <!-- Slide 1 -->
+        <!-- SESH -->
         <a href="#" class="work-slide w-[85%] shrink-0 snap-start md:w-[48%] lg:w-[32%] flex flex-col gap-2"
-          data-title="SESH | Workout Tracker" data-desc="Styled with Shadcn/Tailwind, backend driven by Express, frontend powered by React & Redux Toolkit, with a MongoDB database solution. Add 'Seshes' - a record comprised of 'Workouts' - exercises within that Sesh. Search for Seshes by date,
+          data-title="SESH | Workout Tracker" data-desc="Styled with Shadcn/Tailwind, backend driven by Express & OAuth, frontend powered by React & Redux Toolkit, with a MongoDB database solution. Add 'Seshes' - a record comprised of 'Workouts' - exercises within that Sesh. Search for Seshes by date,
             and add profile data." data-link="https://sesh-app.onrender.com"
-          data-stack="Tailwind, Express, React, Mongo DB" data-img="./assets/DB.png">
+          data-stack="Tailwind, Express, React, Mongo DB" data-img="">
           <div class="max-h-[300px] md:max-h-[500px] overflow-hidden rounded-xl shadow-xl relative">
             <i
               class="flex items-center justify-center text-white rounded-full bg-black p-2 bi bi-arrow-up-right absolute top-4 right-4"></i>
             <img class="w-full" src="./assets/sesh-pic.jpg" alt="Sesh app screenshot">
           </div>
           <h3 class="text-2xl pt-4">SESH - Workout Tracker</h3>
-          <p class="text-gray-600"></p>Workout tracker built with Shadcn/Tailwind, Express, React & RTK, and Mongo DB
+          <p class="text-gray-600"></p>Workout tracker built with Shadcn/Tailwind, Express, React & RTK, and Mongo DB.
           </p>
         </a>
 
-        <!-- Slide 2 -->
-        <a href="" class="w-[85%] shrink-0 snap-start md:w-[48%] lg:w-[32%] flex flex-col gap-2">
+        <!-- LinkStore -->
+        <a href="#" class="work-slide w-[85%] shrink-0 snap-start md:w-[48%] lg:w-[32%] flex flex-col gap-2"
+          data-title="LinkStore | Resource Library" data-desc="Styled with Shadcn/Tailwind, built with NextJS & Next Auth (including OAuth), with a MongoDB database, and an MDX 'Info' page. Build a library of searchable URL links complete with semantic tagging and comments. 
+          and add profile data." data-link="https://linkstore-app.onrender.com" data-stack="NextJS, Mongo DB, OAuth"
+          data-img="">
           <div class="max-h-[300px] md:max-h-[500px] overflow-hidden rounded-xl shadow-xl relative">
             <i
               class="flex items-center justify-center text-white rounded-full bg-black p-2 bi bi-arrow-up-right absolute top-4 right-4"></i>
-            <img class="w-full"
-              src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900&auto=format&fit=crop&q=60" alt="">
+            <img class="w-full" src="./assets/linkstore-pic.jpg" alt="Sesh app screenshot">
           </div>
-          <h3 class="text-2xl pt-4">Sales</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <h3 class="text-2xl pt-4">LinkStore | Resource Library</h3>
+          <p class="text-gray-600"></p>Build a collection of searchable resources or 'Links', complete with tagging and
+          Google OAuth.
+          </p>
         </a>
 
         <!-- Slide 3 -->
@@ -396,20 +393,46 @@
 
         <div class="p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
           <h2 class="font-manrope text-4xl font-semibold leading-10 mb-11">Send Us A Message</h2>
-          <input type="text"
-            class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 border border-black focus:outline-none p-4 mb-10"
-            placeholder="Name">
-          <input type="text"
-            class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 border border-black focus:outline-none p-4 mb-10"
-            placeholder="Email">
-          <input type="text"
-            class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 border border-black focus:outline-none p-4 mb-10"
-            placeholder="Phone">
-          <textarea
-            class="max-h-[200px] w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 border border-black focus:outline-none p-4 mb-10"
-            placeholder="Message"></textarea>
-          <button
-            class="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-black shadow-sm">Send</button>
+          <form action="https://formspree.io/f/xdalddke" method="POST" class="space-y-6 max-w-xl mx-auto">
+
+            <div class="space-y-2">
+              <label for="name" class="text-sm font-medium text-gray-700">
+                Name
+              </label>
+              <input id="name" name="name" type="text" required class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm
+                     shadow-sm transition
+                     focus:outline-none focus:ring-2 focus:ring-black focus:border-black" placeholder="Your name" />
+            </div>
+
+            <div class="space-y-2">
+              <label for="email" class="text-sm font-medium text-gray-700">
+                Email
+              </label>
+              <input id="email" name="email" type="email" required class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm
+                     shadow-sm transition
+                     focus:outline-none focus:ring-2 focus:ring-black focus:border-black"
+                placeholder="you@example.com" />
+            </div>
+
+            <div class="space-y-2">
+              <label for="message" class="text-sm font-medium text-gray-700">
+                Message
+              </label>
+              <textarea id="message" name="message" rows="5" required class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm
+                     shadow-sm transition resize-none
+                     focus:outline-none focus:ring-2 focus:ring-black focus:border-black"
+                placeholder="Your message…"></textarea>
+            </div>
+
+            <button type="submit" class="inline-flex items-center justify-center rounded-full 
+                   bg-black text-white px-6 py-3 text-sm font-medium
+                   transition hover:bg-gray-900
+                   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">
+              Send message
+            </button>
+
+          </form>
+
         </div>
       </div>
     </div>
@@ -440,10 +463,6 @@
   <script>
     AOS.init();
   </script>
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-    integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-    data-cf-beacon='{"rayId":"9bddb11e1f85ef48","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"5070e21320304a1ba2b0a42ce9682840"}'
-    crossorigin="anonymous"></script>
 
   <!-- Drawer + overlay -->
   <div id="workDrawer" class="fixed inset-0 z-50 hidden" aria-hidden="true">

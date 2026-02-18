@@ -35,6 +35,30 @@
   });
 })();
 
+function scrollToTarget(selector, options = {}) {
+  const { offset = 0, behavior = "smooth" } = options;
+
+  const target = document.querySelector(selector);
+  if (!target) return;
+
+  const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+  window.scrollTo({ top, behavior });
+}
+
+(() => {
+  document.addEventListener("click", (e) => {
+    if (e.target.closest("#workDrawerPanel")) return; // don't hijack drawer clicks
+    const trigger = e.target.closest("[data-scroll]");
+    if (!trigger) return;
+
+    e.preventDefault();
+
+    const selector = trigger.dataset.scroll;
+    scrollToTarget(selector, { offset: 0 });
+  });
+})();
+
 (() => {
   const drawer = document.getElementById("workDrawer");
   const panel = document.getElementById("workDrawerPanel");
@@ -63,6 +87,18 @@
       } else {
         imgEl.classList.add("hidden");
         imgEl.removeAttribute("src");
+      }
+    }
+
+    if (linkEl) {
+      if (data.link) {
+        linkEl.href = data.link;
+        linkEl.target = "_blank";
+        linkEl.rel = "noopener";
+        linkEl.classList.remove("hidden");
+      } else {
+        linkEl.href = "#";
+        linkEl.classList.add("hidden");
       }
     }
 
