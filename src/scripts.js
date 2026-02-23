@@ -1,37 +1,40 @@
 (() => {
-  const root = document.querySelector('[data-carousel="work"]');
-  if (!root) return;
+  // Find all sections on the page that have the data-carousel attribute
+  const carousels = document.querySelectorAll("[data-carousel]");
 
-  const track = root.querySelector("[data-track]");
-  if (!track) return;
+  carousels.forEach((root) => {
+    const track = root.querySelector("[data-track]");
+    const prevBtn = root.querySelector("[data-prev]");
+    const nextBtn = root.querySelector("[data-next]");
 
-  const prevBtn = root.querySelector("[data-prev]");
-  const nextBtn = root.querySelector("[data-next]");
-  if (!prevBtn || !nextBtn) return;
+    // If this specific section is missing any parts, skip it
+    if (!track || !prevBtn || !nextBtn) return;
 
-  // How far to move each click. Tune 0.9 → 1.0
-  const getStep = () => Math.max(1, Math.floor(track.clientWidth * 0.9));
+    // Calculate scroll distance based on container width
+    const getStep = () => Math.max(1, Math.floor(track.clientWidth * 0.8));
 
-  const go = (dir) => {
-    track.scrollBy({
-      left: dir * getStep(),
-      behavior: "smooth",
+    const go = (dir) => {
+      track.scrollBy({
+        left: dir * getStep(),
+        behavior: "smooth",
+      });
+    };
+
+    prevBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      go(-1);
     });
-  };
 
-  prevBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    go(-1);
-  });
+    nextBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      go(1);
+    });
 
-  nextBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    go(1);
-  });
-
-  root.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowLeft") go(-1);
-    if (e.key === "ArrowRight") go(1);
+    // Keyboard navigation support when hovering/interacting
+    root.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") go(-1);
+      if (e.key === "ArrowRight") go(1);
+    });
   });
 })();
 
