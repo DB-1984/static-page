@@ -71,8 +71,18 @@ function scrollToTarget(selector, options = {}) {
   const titleEl = document.getElementById("workDrawerTitle");
   const descEl = document.getElementById("workDrawerDesc");
   const linkEl = document.getElementById("workDrawerLink");
+  const stack = document.getElementById("workDrawerStack");
 
-  if (!drawer || !panel || !closeBtn || !titleEl || !descEl || !linkEl) return;
+  if (
+    !drawer ||
+    !panel ||
+    !closeBtn ||
+    !titleEl ||
+    !descEl ||
+    !linkEl ||
+    !stack
+  )
+    return;
 
   let lastFocus = null;
 
@@ -91,6 +101,12 @@ function scrollToTarget(selector, options = {}) {
         imgEl.classList.add("hidden");
         imgEl.removeAttribute("src");
       }
+    }
+
+    if (stack) {
+      stack.innerHTML = data.stack;
+    } else {
+      stack = null;
     }
 
     if (linkEl) {
@@ -145,6 +161,7 @@ function scrollToTarget(selector, options = {}) {
           desc: slide.dataset.desc,
           img: slide.dataset.img,
           link: slide.dataset.link,
+          stack: slide.dataset.stack,
         });
       });
     });
